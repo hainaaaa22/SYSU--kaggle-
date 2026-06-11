@@ -77,3 +77,5 @@ print(f"最终测试集形状：{final_test.shape}")
 final_train.to_csv('final_train.csv', index = False)
 final_test.to_csv('final_test.csv', index = False)
 print("'final_train.csv' 和 'final_test.csv' 已保存在本地，准备用于下一步建模")
+
+print("train.csv 的所有列名:", pd.read_csv('battery-life-prediction-predicting-long-life-based-on-short\\train.csv').columns.tolist())
